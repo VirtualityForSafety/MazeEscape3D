@@ -21,7 +21,8 @@ MazeEscape3D is a virtual maze escape which includes five intersections to get t
 1. Download or pull this repository.
 2. Download and import [Unity Standard Assets](https://assetstore.unity.com/packages/essentials/asset-packs/standard-assets-32351) from AssetStore
 3. Download and import [SteamVR Plugin](https://assetstore.unity.com/packages/tools/integration/steamvr-plugin-32647)
-4. Hit the run button.
+4. When you are required to set SteamVRInput up, choose 'GrabGrip' from Actions and press 'Save and Generate'.
+5. Hit the run button.
 
 ## Walking in the maze
 VR: user can move forward by swinging two controllers with grabing any button.
