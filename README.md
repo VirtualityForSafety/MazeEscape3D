@@ -32,6 +32,8 @@ Desktop: user can move by pressing key 'W', 'A', 'S', and 'D'.
 This project has been implemented through a [research collaboration](https://virtualityforsafety.github.io/about/) with KAIST (Hyeopwoo Lee), Xi’an Jiaotong-Liverpool University (Prof. Hai-Ning Liang,
 Diego Vilela Monteiro), and Handong Global University (Prof. Daseong Han, Betty Hyejin Kim, Youngnoh Goh).
 
+## Resources
+We thank [Pixabay](https://pixabay.com/) for allowing license-free images for signs at crossroad.
 
 ## Maintainer
 - [Jinki Jung](https://jinkijung.github.io/)
