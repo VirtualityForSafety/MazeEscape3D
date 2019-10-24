@@ -16,6 +16,11 @@ namespace Tasc
             get; set;
         }
 
+        public Valve.VR.InteractionSystem.GrabTypes grabType
+        {
+            get; set;
+        }
+
         public float GetSwingMagnitude()
         {
             return (isGrabing) ? velocityMagnitute : 0;

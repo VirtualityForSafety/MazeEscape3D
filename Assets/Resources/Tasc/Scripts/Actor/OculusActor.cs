@@ -53,6 +53,7 @@ namespace Tasc
                 if (starting != GrabTypes.None)
                 {
                     hands[i].GetComponent<InputOTouch>().isGrabing = true;
+                    hands[i].GetComponent<InputOTouch>().grabType = starting;
                     ConditionPublisher.Instance.Send(new OTouchDownState(this, (int)starting));
                 }
 
@@ -61,6 +62,11 @@ namespace Tasc
                 {
                     hands[i].GetComponent<InputOTouch>().isGrabing = false;
                     ConditionPublisher.Instance.Send(new OTouchUpState(this, (int)ending));
+                }
+                else
+                {
+                    if(hands[i].GetComponent<InputOTouch>().isGrabing)
+                        ConditionPublisher.Instance.Send(new OTouchHoldState(this, (int)hands[i].GetComponent<InputOTouch>().grabType));
                 }
             }
         }

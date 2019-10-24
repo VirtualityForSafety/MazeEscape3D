@@ -15,7 +15,7 @@ namespace Tasc
         Vector3 moveDirection;
 
         private OculusActor actor;
-        public WalkingBySwing(OculusActor _actor) : base(Type.WalkingBySwing, new Condition(new BoolVariableState(_actor, "isWalkable", false), Condition.RelationalOperator.Equal))
+        public WalkingBySwing(OculusActor _actor) : base(Type.WalkingBySwing, new Condition(new BoolVariableState(_actor, "isWalkable", false), RelationalOperator.Equal))
         {
             actor = _actor;
         }
@@ -34,7 +34,7 @@ namespace Tasc
 
         private void MakeMove(Transform transform, float walkingSpeed)
         {
-            Vector2 inputVec = new Vector2(1, 0);
+            Vector2 inputVec = new Vector2(0, 1);
 
             walkingSpeed = Mathf.Min(walkingSpeed, maxSpeed);
             // always move along the camera forward as it is the direction that it being aimed at
